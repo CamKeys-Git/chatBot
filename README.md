@@ -82,6 +82,6 @@ Create a GUI with tkinter and extract the information from our files.
 import tkinter
 from tkinter import *
 ```
-
-Once you run the program you should get a pop-up GUI to comunicate with the chatbot.
+Run train_chatbot.py to train the model then run chatgui.py.
+Once you run the program you should get a pop-up GUI to comunicate with the trained chatbot.
 
