@@ -49,7 +49,7 @@ model.add(Dropout(0.5))
 model.add(Dense(len(train_y[0]), activation='softmax'))
 ```
 
-Initializing training data with the variable training. Then lemmatizing the words with lemmatizer.lemmatize.
+Training data is initialized with the variable training. Then the words are lemmatized using lemmatizer.lemmatize and added to the bag list. 
 
 ```python
 training = []
