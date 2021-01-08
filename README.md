@@ -84,6 +84,8 @@ train_y = list(training[:,1])
 print("Training data created")
 ```
 
+## Run The Program
+
 To run the chatbot first train the model with train_chatbot.py then run chatgui.py.
 
 ```terminal
