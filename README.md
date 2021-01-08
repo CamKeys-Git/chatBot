@@ -70,6 +70,11 @@ for doc in documents:
     output_row[classes.index(doc[1])] = 1
 
     training.append([bag, output_row])
+```    
+    
+ A dataset is created for training.   
+    
+```python
 # shuffle our features and turn into np.array
 random.shuffle(training)
 training = np.array(training)
