@@ -18,6 +18,8 @@ This is a chatbot neural network using Keras models that I worked on through a t
 
 #### chatbot_model.h5 — the actual model created by train_chatbot.py and used by chatgui.py
 
+## How It Works
+
 
 The code below will initialize all of the lists in intents.json where the natural language data is stored.
 
