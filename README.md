@@ -1,8 +1,8 @@
 # Simple-Python-Chatbot
 
-## Creating a simple Python chatbot using natural language processing and deep learning.
+## A simple Python chatbot using natural language processing and deep learning.
 
-This is a chatbot neural network using Keras models that I worked on through a toutorial online by Jere Xu. Given keywords in intents.json it will predict relevent answers to medical-related questions. 
+This is a chatbot neural network using Keras models that I worked on through a toutorial online by Jere Xu. Given keywords in intents.json it will predict relevent answers to medical-related questions. It also uses tkinter to create a GUI and extract the information from the files.
 
 ## List of necessary components to run this project
 
@@ -49,7 +49,7 @@ model.add(Dropout(0.5))
 model.add(Dense(len(train_y[0]), activation='softmax'))
 ```
 
-Initializing training data with the variable training.
+Initializing training data with the variable training. Then lemmatizing the words with lemmatizer.lemmatize.
 
 ```python
 training = []
@@ -78,12 +78,7 @@ train_x = list(training[:,0])
 train_y = list(training[:,1])
 print("Training data created")
 ```
-It uses tkinter to reate a GUI and extract the information from the files.
 
-```python
-import tkinter
-from tkinter import *
-```
 To run the chatbot first train the model with train_chatbot.py then run chatgui.py.
 
 ```terminal
