@@ -19,7 +19,7 @@ This is a chatbot neural network using Keras models that I worked on through a t
 #### chatbot_model.h5 — the actual model created by train_chatbot.py and used by chatgui.py
 
 
-Initialize all of the lists where natural language data is stored.
+The code below will initialize all of the lists in intents.json where the natural language data is stored.
 
 ```python
 for intent in intents['intents']:
@@ -36,7 +36,7 @@ for intent in intents['intents']:
             classes.append(intent['tag'])
 ```            
             
-Create model with 3 layers. First layer 128 neurons, second layer 64 neurons and 3rd output layer contains number of neurons equal to number of intents to predict output intent with softmax.
+This will create model with 3 layers. First layer 128 neurons, second layer 64 neurons and 3rd output layer contains number of neurons equal to number of intents to predict output intent with softmax.
 
 ```python
 model = Sequential()
@@ -76,12 +76,18 @@ train_x = list(training[:,0])
 train_y = list(training[:,1])
 print("Training data created")
 ```
-Create a GUI with tkinter and extract the information from our files.
+It uses tkinter to reate a GUI and extract the information from the files.
 
 ```python
 import tkinter
 from tkinter import *
 ```
-Run train_chatbot.py to train the model then run chatgui.py.
+To run the chatbot first train the model with train_chatbot.py then run chatgui.py.
+
+```terminal
+python train_chatbot.py
+python chatgui.py
+```
+
 Once you run the program you should get a pop-up GUI to comunicate with the trained chatbot.
 
