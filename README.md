@@ -2,7 +2,7 @@
 
 ## A simple Python chatbot using natural language processing and deep learning.
 
-This is a 3-layer neural network using Keras models that I worked on through a toutorial online by Jere Xu. Given keywords in intents.json it will predict relevent answers to medical-related questions. It also uses tkinter to create a GUI and extract the information from the files.
+This is a 3-layer neural network using Keras models that I worked on through a toutorial online by Jere Xu. Given keywords in intents.json it will create a training model and learn to predict relevent answers to medical-related questions. It also uses tkinter to create a GUI and extract the information from the files.
 
 ## List of necessary components to run this project
 
