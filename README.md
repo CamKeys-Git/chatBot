@@ -18,6 +18,17 @@ intents.json — a bunch of JavaScript objects that lists different tags that co
 
 chatbot_model.h5 — the actual model created by train_chatbot.py and used by chatgui.py
 
+## Run The Program
+
+To run the chatbot first train the model with train_chatbot.py then run chatgui.py.
+
+```terminal
+python train_chatbot.py
+python chatgui.py
+```
+
+Once you run the program you should get a pop-up GUI to comunicate with the trained chatbot.
+
 ## How It Works
 
 
@@ -83,15 +94,4 @@ train_x = list(training[:,0])
 train_y = list(training[:,1])
 print("Training data created")
 ```
-
-## Run The Program
-
-To run the chatbot first train the model with train_chatbot.py then run chatgui.py.
-
-```terminal
-python train_chatbot.py
-python chatgui.py
-```
-
-Once you run the program you should get a pop-up GUI to comunicate with the trained chatbot.
 
