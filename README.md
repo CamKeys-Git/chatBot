@@ -76,4 +76,12 @@ train_x = list(training[:,0])
 train_y = list(training[:,1])
 print("Training data created")
 ```
+Create a GUI with tkinter and extract the information from our files.
+
+```python
+import tkinter
+from tkinter import *
+```
+
+Once you run the program you should get a pop-up GUI to comunicate with the chatbot.
 
